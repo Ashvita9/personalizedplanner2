@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Input Field for Travel Plan -->
+    <EditText
+        android:id="@+id/travelInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Travel Plan"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:background="@android:drawable/edit_text" />
+
+    <!-- Button to Pick Date & Time -->
+    <Button
+        android:id="@+id/pickDateBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#090909"
+        android:text="Pick Date and Time" />
+
+    <!-- ListView to Display Travel Plans -->
+    <ListView
+        android:id="@+id/travelListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp" />
+</LinearLayout>
